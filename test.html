@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Selector de Destino Turístico</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Selector de Destino Turístico</h1>
+
+      <div id="ageQuestion">
+        <p>¿Cuál es tu edad?</p>
+        <input type="number" id="ageInput" />
+        <button id="ageButton">Siguiente</button>
+      </div>
+
+      <div id="climateQuestion">
+        <p>¿Prefieres un clima cálido o frío?</p>
+        <input type="radio" name="climate" value="cálido" /> Cálido
+        <input type="radio" name="climate" value="frío" /> Frío
+        <button id="climateButton">Siguiente</button>
+      </div>
+
+      <div id="landscapeQuestion">
+        <p>¿Qué tipo de paisaje prefieres?</p>
+        <input type="checkbox" name="landscape" value="playa" /> Playa
+        <input type="checkbox" name="landscape" value="montaña" /> Montaña
+        <input type="checkbox" name="landscape" value="ciudad" /> Ciudad
+        <button id="landscapeButton">Siguiente</button>
+      </div>
+
+      <div id="budgetQuestion">
+        <p>¿Cuál es tu presupuesto estimado en USD?</p>
+        <input type="number" id="budgetInput" />
+        <button id="budgetButton">Obtener Resultado</button>
+      </div>
+
+      <div id="result">
+        <h2>Destino Recomendado</h2>
+        <p id="destination"></p>
+      </div>
+
+      <script src="main.js"></script>
+    </div>
+  </body>
+</html>
